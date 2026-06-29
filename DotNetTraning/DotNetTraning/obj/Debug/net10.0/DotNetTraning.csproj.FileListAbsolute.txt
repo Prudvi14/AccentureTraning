@@ -1,0 +1,14 @@
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\bin\Debug\net10.0\DotNetTraning.exe
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\bin\Debug\net10.0\DotNetTraning.deps.json
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\bin\Debug\net10.0\DotNetTraning.runtimeconfig.json
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\bin\Debug\net10.0\DotNetTraning.dll
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\bin\Debug\net10.0\DotNetTraning.pdb
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\DotNetTraning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\DotNetTraning.AssemblyInfoInputs.cache
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\DotNetTraning.AssemblyInfo.cs
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\DotNetTraning.csproj.CoreCompileInputs.cache
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\DotNetTraning.dll
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\refint\DotNetTraning.dll
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\DotNetTraning.pdb
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\DotNetTraning.genruntimeconfig.cache
+C:\Users\gades\source\repos\AccentureTraning\DotNetTraning\DotNetTraning\obj\Debug\net10.0\ref\DotNetTraning.dll
