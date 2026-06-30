@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DotNetNewProject
+namespace DotNetTraning
 {
     internal class TypeCasting
     {

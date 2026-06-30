@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DotNetNewProject
+namespace DotNetTraning
 {
     class DataTypes
     {
