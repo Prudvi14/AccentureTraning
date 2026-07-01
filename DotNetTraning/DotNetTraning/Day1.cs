@@ -64,7 +64,7 @@ namespace DotNetTraning
                 if (i % 2 == 0) Console.WriteLine(i + " is even number");
                 else Console.WriteLine(i + " is odd number");
             }
-            //Q2.Print multiplication tables.
+
         }
     }
 }
