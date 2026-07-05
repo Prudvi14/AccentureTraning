@@ -2,6 +2,8 @@
 
 namespace DotNetTraning
 {
+    delegate void PrintDelegate(string message);
+    delegate int NewMathDelegate(int a, int b);
     class Myclass
     {
         static void Main(String[] args)
@@ -36,7 +38,7 @@ namespace DotNetTraning
             //c1.Start();
             //c1.Accelerate();
 
-            Encapsulation s= new Encapsulation();
+            //Encapsulation s= new Encapsulation();
             //s.setName("Prudvi");
             //s.setAge(21);
             //s.setMarks(95);
@@ -98,22 +100,87 @@ namespace DotNetTraning
             //box3.ShowSize();
 
             //method overriding
-            Animal a1 = new Dog();
-            Animal a2 = new Cat();
-            Animal a3 = new Bird();
-            a1.MakeSound();  
-            a2.MakeSound(); 
-            a3.MakeSound(); 
+            //Animal a1 = new Dog();
+            //Animal a2 = new Cat();
+            //Animal a3 = new Bird();
+            //a1.MakeSound();  
+            //a2.MakeSound(); 
+            //a3.MakeSound(); 
             // Array of Animals — Polymorphism power!
-            Animal[] animals = {
-                new Dog(),
-                new Cat(),
-                new Bird(),
-                new Dog()
-            };
-            Console.WriteLine("\n=== All Animals ===");
-            foreach (Animal a in animals)
-                a.MakeSound();
+            //Animal[] animals = {
+            //    new Dog(),
+            //    new Cat(),
+            //    new Bird(),
+            //    new Dog()
+            //};
+            //Console.WriteLine("\n=== All Animals ===");
+            //foreach (Animal a in animals)
+            //    a.MakeSound();
+
+            //abstract class in abstraction
+            //NewCar car = new NewCar("Toyota", 180, 4);
+            //car.ShowInfo();
+            //Console.WriteLine();
+            //NewBike bike = new NewBike("Honda", 120, true);
+            //bike.ShowInfo();
+
+            //interface
+            //IPayment payment;
+            //payment = new CreditCard();
+            //payment.MakePayment(500);
+            //payment.VerifyPayment();
+            //payment.ShowReceipt();
+            //Console.WriteLine();
+            //payment = new UPI();
+            //payment.MakePayment(200);
+            //payment.VerifyPayment();
+            //payment.ShowReceipt();
+            //Console.WriteLine();
+            //payment = new NetBanking();
+            //payment.MakePayment(1000);
+            //payment.VerifyPayment();
+            //payment.ShowReceipt();
+
+            //multiple interface
+            //Duck duck = new Duck();
+            //duck.Fly();    
+            //duck.Swim();   
+            //duck.Run();    
+            //Eagle eagle = new Eagle();
+            //eagle.Fly();   
+            //Fish fish = new Fish();
+            //fish.Swim();
+
+            //delegates
+            //MathDelegate d;
+            //d = MathOperations.Add;
+            //Console.WriteLine("Add: " + d(10, 5));       
+            //d = MathOperations.Subtract;
+            //Console.WriteLine("Subtract: " + d(10, 5));  
+            //d = MathOperations.Multiply;
+            //Console.WriteLine("Multiply: " + d(10, 5));  
+
+
+            //anonymous delegate
+            //PrintDelegate print = delegate (string msg)
+            //{
+            //    Console.WriteLine("Message: " + msg);
+            //};
+            //print("Hello Prudvi!");  
+            //print("Hello World!");  
+            //NewMathDelegate add = delegate (int a, int b)
+            //{
+            //    return a + b;
+            //};
+            //Console.WriteLine("Sum: " + add(10, 20));
+
+            //lambda delegate
+            PrintDelegate print = msg =>
+                Console.WriteLine("Lambda: " + msg);
+            print("Hello!");   
+            NewMathDelegate add = (a, b) => a + b;
+            Console.WriteLine("sum: "+add(10, 20));
+
 
             //Generics.addGenerics<int>(8, 9);
             //Generics.addGenerics<string>("hii ", "Prudvi");
