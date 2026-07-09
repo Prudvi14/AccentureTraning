@@ -1,0 +1,18 @@
+﻿@model CalculatorResult
+
+<h2>Calculator Result</h2>
+
+<p><strong>Operation:</strong> @Model.Operation</p>
+<p><strong>Num1:</strong> @Model.Num1</p>
+<p><strong>Num2:</strong> @Model.Num2</p>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+else
+{
+    <p><strong>Result:</strong> @Model.Result</p>
+}
+
+<p><strong>Calculated At:</strong> @Model.CalculatedAt</p>
