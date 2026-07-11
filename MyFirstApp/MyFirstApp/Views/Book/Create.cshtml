@@ -1,0 +1,28 @@
+﻿@model Book
+
+<h2>Add a New Book</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Title:</label>
+        <input asp-for="Title" />
+        <span asp-validation-for="Title" style="color:red"></span>
+    </div>
+    <div>
+        <label>Author:</label>
+        <input asp-for="Author" />
+        <span asp-validation-for="Author" style="color:red"></span>
+    </div>
+    <div>
+        <label>Price:</label>
+        <input asp-for="Price" />
+        <span asp-validation-for="Price" style="color:red"></span>
+    </div>
+    <div>
+        <label>Pages:</label>
+        <input asp-for="Pages" />
+        <span asp-validation-for="Pages" style="color:red"></span>
+    </div>
+
+    <button type="submit">Save Book</button>
+</form>
