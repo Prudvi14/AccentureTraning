@@ -1,13 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using MyFirstApp.Data;
+using UserDataLibrary.IRepo;
+using UserDataLibrary.Models;
+using UserDataLibrary.Repo;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("UserDbConnection")));
+
+builder.Services.AddScoped<IUser, UserOps>();
 
 var app = builder.Build();
 

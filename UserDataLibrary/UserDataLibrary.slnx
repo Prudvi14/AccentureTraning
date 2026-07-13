@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../MyFirstApp/MyFirstApp/MyFirstApp.csproj" />
+  <Project Path="UserDataLibrary/UserDataLibrary.csproj" />
+</Solution>
