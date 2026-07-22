@@ -1,0 +1,17 @@
+{
+  "name": "Node Dev Container",
+  "image": "node:latest",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install"
+}
+
+// docker start react-dev
+// docker exec -it react-dev sh
+// cd /app/myapp
+// npm start
+
+
+// docker start vite-dev
+// docker exec -it vite-dev sh
+// cd /app/vite-react-project
+// npm run dev -- --host
