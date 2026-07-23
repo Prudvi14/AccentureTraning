@@ -1,0 +1,19 @@
+﻿@model Patient
+
+<h2>Details</h2>
+<h4>Patient</h4>
+<hr />
+<dl class="row">
+    <dt class="col-sm-2">PatientId</dt>
+    <dd class="col-sm-10">@Model.PatientId</dd>
+
+    <dt class="col-sm-2">PatientName</dt>
+    <dd class="col-sm-10">@Model.PatientName</dd>
+
+    <dt class="col-sm-2">Age</dt>
+    <dd class="col-sm-10">@Model.Age</dd>
+
+    <dt class="col-sm-2">ContactNo</dt>
+    <dd class="col-sm-10">@Model.ContactNo</dd>
+</dl>
+<a asp-action="Index">Back to List</a>

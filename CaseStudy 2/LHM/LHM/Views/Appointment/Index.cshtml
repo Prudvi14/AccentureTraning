@@ -1,0 +1,22 @@
+﻿@model List<Appointment>
+
+<h2>All Appointments</h2>
+<a asp-action="Create">Create New</a>
+
+<table class="table">
+    <tr>
+        <th>AppointmentId</th>
+        <th>PatientId</th>
+        <th>AppointmentDate</th>
+        <th></th>
+    </tr>
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td>@a.AppointmentId</td>
+            <td>@a.PatientId</td>
+            <td>@a.AppointmentDate</td>
+            <td><a asp-controller="Patient" asp-action="Details" asp-route-id="@a.PatientId">Patient Details</a></td>
+        </tr>
+    }
+</table>
