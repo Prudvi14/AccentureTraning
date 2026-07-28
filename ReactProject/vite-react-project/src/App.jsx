@@ -1,20 +1,42 @@
-import { useState } from 'react';
+// import UseStateHook from '../src/Hooks/UseStateHook';
+// import StateExam from '../src/Components/StateExam';
+// import Tailwind from '../src/TailwindAndProps/Tailwind';
+// import { Link, Routes, Route } from 'react-router-dom';
+// import Home from '../src/Components/Home';
+// import About from '../src/Components/About';
+// import Contact from '../src/Components/Contact';
+// import Movie from '../src/Components/Movie'
+// import ProfileCard from '../src/TailwindAndProps/ProfileCard'
+import BgChanger from '../src/Projects/BgChanger'
 
 function App() {
-  let [counter, setCounter]=useState(0);
-  const add=()=>{
-    if(counter<20) setCounter(counter+1);
-  }
-  const sub=()=>{
-    if(counter>0) setCounter(counter-1);
-  }
   return (
-    <div align="center">
-      <h1>Welcome to My App and its range is from 0-20</h1>
-      <h1>value: {counter}</h1>
-      <button onClick={add}>Add</button>
-      <button onClick={sub}>subtract</button>
-    </div>
+    <>
+      {/* <UseStateHook /> */}
+
+      {/* <StateExam/> */}
+      
+      {/* <Tailwind/> */}
+      
+      {/* <nav>
+        <Link to="/">Home</Link>   {"| "}
+        <Link to="/about">About</Link>{"| "}
+        <Link to="/contact">Contact</Link>
+      </nav>
+      <hr />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes> */}
+      
+      {/* <Movie/> */}
+
+        {/* <ProfileCard name="rajesh" age={30} gender="Male"/>
+        <ProfileCard name="pavani" age={25} gender="Female"/> */}
+
+      <BgChanger/>
+    </>
   );
 }
 
