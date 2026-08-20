@@ -1,0 +1,20 @@
+@model Githubdemo.Employee
+
+<h1>Edit Employee</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Salary"></label>
+        <input asp-for="Salary" />
+    </div>
+    <button type="submit">Save</button>
+</form>
+
+<p>
+    <a asp-action="Index">Back to List</a>
+</p>

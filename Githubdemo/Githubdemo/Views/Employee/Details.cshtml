@@ -1,0 +1,14 @@
+@model Githubdemo.Employee
+
+<h1>Employee Details</h1>
+
+<div>
+    <p><strong>Id:</strong> @Model.Id</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Salary:</strong> @Model.Salary</p>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>

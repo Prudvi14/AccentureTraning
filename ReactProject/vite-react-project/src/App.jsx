@@ -7,7 +7,9 @@
 // import Contact from '../src/Components/Contact';
 // import Movie from '../src/Components/Movie'
 // import ProfileCard from '../src/TailwindAndProps/ProfileCard'
-import BgChanger from '../src/Projects/BgChanger'
+// import BgChanger from '../src/Projects/BgChanger'
+// import PasswordGenerator from '../src/Projects/PasswordGenerator'
+import Currency from '../src/Projects/Currency'
 
 function App() {
   return (
@@ -35,7 +37,11 @@ function App() {
         {/* <ProfileCard name="rajesh" age={30} gender="Male"/>
         <ProfileCard name="pavani" age={25} gender="Female"/> */}
 
-      <BgChanger/>
+      {/* <BgChanger/> */}
+
+      {/* <PasswordGenerator/> */}
+
+      <Currency/>
     </>
   );
 }

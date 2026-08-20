@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Githubdemo/">
+    <Project Path="Githubdemo/EmpSol/EmpSol.csproj" />
+  </Folder>
+  <Project Path="Githubdemo/Githubdemo.csproj" />
+</Solution>
