@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../ServiceBusDemo/ServiceBusDemo/ServiceBusDemo.csproj" />
   <Project Path="EmployeeUsingSQLLite/EmployeeUsingSQLLite.csproj" />
 </Solution>
