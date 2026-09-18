@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Cancel Membership";
+}
+
+<div class="container mt-4">
+    <h1>Cancel Membership</h1>
+
+    <h4>PatientInfo</h4>
+    <hr />
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.Message
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <form asp-action="CancelMembership"
+                  method="post">
+
+                <div class="form-group mb-3">
+                    <label for="registrationId"
+                           class="control-label">
+                        RegistrationID
+                    </label>
+
+                    <input type="number"
+                           id="registrationId"
+                           name="registrationId"
+                           class="form-control"
+                           required />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit"
+                           value="Delete"
+                           class="btn btn-danger" />
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a asp-controller="PatientInfo"
+           asp-action="RegisterForMembership">
+            Back to Registration Page
+        </a>
+    </div>
+</div>

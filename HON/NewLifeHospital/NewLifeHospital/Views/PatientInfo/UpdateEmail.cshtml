@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Update Email";
+}
+
+<div class="container mt-4">
+    <h1>UpdateEmail</h1>
+
+    <h4>PatientInfo</h4>
+    <hr />
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.Message
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <form asp-action="UpdateEmail"
+                  method="post">
+
+                <div class="form-group mb-3">
+                    <label for="registrationId"
+                           class="control-label">
+                        RegistrationID
+                    </label>
+
+                    <input type="number"
+                           id="registrationId"
+                           name="registrationId"
+                           class="form-control"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email"
+                           class="control-label">
+                        EmailID
+                    </label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           maxlength="30"
+                           class="form-control"
+                           required />
+
+                </div>
+
+                <div class="form-group">
+                    <input type="submit"
+                           value="Modify"
+                           class="btn btn-primary" />
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a asp-controller="PatientInfo"
+           asp-action="RegisterForMembership">
+            Back to Registration
+        </a>
+    </div>
+</div>
